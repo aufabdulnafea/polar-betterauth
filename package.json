@@ -37,7 +37,8 @@
     "test:coverage": "vitest run --coverage",
     "build": "tsup ./src/index.ts ./src/client.ts --format esm,cjs --dts --clean --sourcemap",
     "dev": "npm run build -- --watch",
-    "check": "biome check --write ./src"
+    "check": "biome check --write ./src",
+    "prepare": "npm build"
   },
   "files": [
     "dist"
